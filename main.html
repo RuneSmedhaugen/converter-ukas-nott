@@ -57,7 +57,7 @@
                         .match(/.{1,2}/g)
                         .map(hex => {
                             const charCode = parseInt(hex, 16);
-                            return charCode >= 32 && charCode <= 126 // Only valid printable ASCII range
+                            return charCode >= 32 && charCode <= 126
                                 ? String.fromCharCode(charCode)
                                 : "?";
                         })
